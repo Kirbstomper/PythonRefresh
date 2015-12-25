@@ -37,7 +37,8 @@ def get_address():
     state = random_name('states.txt')
     city = random_name('cities.txt')
 
-    print(number, street, suffix,city,state,zipcode)#WORK ON FORMATTING #######
+    print(str(number)+" " +street+" "+suffix+city+state+str(zipcode))#WORK ON FORMATTING #######
+
 
 print "First Name:",get_first()
 print "Last Name:",get_last()
