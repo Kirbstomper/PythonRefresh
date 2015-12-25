@@ -21,7 +21,7 @@ def file_len(fname):
 def random_name(list):
     nameList = open(list,'r' ).readlines()
     listlen = file_len(list)
-    return nameList[randint(0,listlen)].split(' ', 1)[0]
+    return nameList[randint(0,listlen-1)].split(' ', 1)[0]
 
 def get_first():
     print random_name('first.txt')
@@ -29,6 +29,16 @@ def get_first():
 def get_last():
     print random_name('last.txt')
 
+def get_address():
+    street = random_name('streets.txt')
+    suffix = random_name('suffix.txt')
+    zipcode = (randint(10000,99999))
+    number = (randint(1,9999))
+    state = random_name('states.txt')
+    city = random_name('cities.txt')
+
+    print(number, street, suffix,city,state,zipcode)#WORK ON FORMATTING #######
 
 print "First Name:",get_first()
-print "Lasst Name:",get_last()
+print "Last Name:",get_last()
+print get_address()

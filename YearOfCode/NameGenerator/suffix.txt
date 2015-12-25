@@ -1,0 +1,9 @@
+RD
+ST
+XING
+TER
+CT
+PKWY
+HWY
+CIR
+AVE
