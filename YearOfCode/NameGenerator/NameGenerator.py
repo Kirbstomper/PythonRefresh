@@ -24,10 +24,10 @@ def random_name(list):
     return nameList[randint(0,listlen-1)].split(' ', 1)[0]
 
 def get_first():
-    print random_name('first.txt')
+    return random_name('first.txt')
 
 def get_last():
-    print random_name('last.txt')
+    return random_name('last.txt')
 
 def get_address():
     street = random_name('streets.txt')
@@ -37,8 +37,11 @@ def get_address():
     state = random_name('states.txt')
     city = random_name('cities.txt')
 
-    print(str(number)+" " +street+" "+suffix+city+state+str(zipcode))#WORK ON FORMATTING #######
+    return(str(number)+" " +street+" "+suffix+" "+city+" "+state+" "+str(zipcode))#WORK ON FORMATTING #######
 
+def get_phone():
+    
+    return number
 
 print "First Name:",get_first()
 print "Last Name:",get_last()
