@@ -40,9 +40,10 @@ def get_address():
     return(str(number)+" " +street+" "+suffix+" "+city+" "+state+" "+str(zipcode))#WORK ON FORMATTING #######
 
 def get_phone():
-    
-    return number
+
+    return randint(1000000,9999999)
 
 print "First Name:",get_first()
 print "Last Name:",get_last()
 print get_address()
+print get_phone()
